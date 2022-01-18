@@ -1,0 +1,52 @@
+.slider  
+    &__title
+        font-weight: 500
+        font-size: 28px
+        text-transform: uppercase
+    &__title::before
+        content: ''
+        width: 43px
+        height: 1px
+        background-color: $blue
+        display: inline-block
+        align-items: center
+        margin-bottom: 9px
+        margin-right: 20px
+
+.slider-dots
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 51px
+    margin-bottom: 59px
+    &__dot
+        display: block
+        width: 394px
+        height: 1px
+        background-color: #E3E4E6
+    &__dot--active
+        background-color: $black
+
+.slider-arrow
+
+.arrow-left
+    border: none
+    border-left: solid 2px $black
+    border-bottom: solid 2px $black
+    width: 10px
+    height: 15px
+    transform: rotate(45deg)
+    background: none
+    cursor: pointer
+    margin-left: 20px
+
+.arrow-right
+    border: none
+    border-left: solid 2px $black
+    border-bottom: solid 2px $black
+    width: 10px
+    height: 15px
+    transform: rotate(225deg)
+    background: none
+    cursor: pointer
+    margin-right: 20px

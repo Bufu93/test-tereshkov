@@ -1,0 +1,75 @@
+.products
+    padding-top: 20px
+    padding-bottom: 94px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 42px
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background-color: $BG
+        text-align: center
+        padding: 28px
+    &__item:hover
+        box-shadow: $shadow
+    &__title
+        min-height: 44px
+        font-weight: 500
+        font-size: 18px
+        color: $blue
+        max-width: 350px
+        padding-left: 50px
+    &__description
+        display: flex
+        justify-content: space-between
+    &__description--price
+        margin-top: 20px
+    &__text
+        margin: 0
+        font-weight: 350
+        font-size: 14px
+
+.product-price
+    min-height: 50px
+    color: $blue
+    font-weight: 500
+    font-size: 20px
+    &--sale::before
+        content: "19420 ₽"
+        display: block
+        text-decoration-line: line-through
+        font-weight: 350
+        font-size: 14px
+        color: $black
+        
+
+
+.buttons-row
+    margin-top: 25px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+.buttons-wrapper
+    display: flex
+    flex-direction: row
+
+.btn-tocart
+    padding: 3px 28px
+    display: flex
+    align-items: center
+    border-radius: 20px
+    outline: none
+    border: none
+    background-color: $white
+    cursor: pointer
+    box-shadow: $shadow
+    font-weight: 350
+    font-size: 18px
+.btn-tocart:hover
+    background-color: $blue
+    transition: 0.5s
+
+.btn-tocart span
+    padding-top: 10px

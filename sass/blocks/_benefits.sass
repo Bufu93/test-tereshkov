@@ -1,0 +1,51 @@
+.benefits
+    margin-bottom: 100px
+    &__title
+        font-weight: 500
+        font-size: 28px
+        text-transform: uppercase
+    &__title::before
+        content: ''
+        width: 43px
+        height: 1px
+        background-color: $blue
+        display: inline-block
+        align-items: center
+        margin-bottom: 9px
+        margin-right: 20px
+
+    
+.benefits-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        
+
+.benefit
+    display: flex
+    background-color: $BG
+    align-items: center
+    padding: 25px 50px
+    &__img
+        margin-right: 50px
+    &__text
+        font-weight: 350
+        font-size: 18px
+
+.benefit-picture
+    position: relative
+    &__text
+        position: absolute
+        top: 95px
+        right: 21px
+        font-weight: 500
+        font-size: 36px
+        color: $blue
+        display: block
+        max-width: 397px
+        line-height: 140%
+        

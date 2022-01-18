@@ -5,9 +5,1200 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
+    <header class="header">
+        <div class="navbar container">
+            <img class="logo" src="image/logo.png" alt="">
+            <nav class="nav">
+                <a class="nav__link nav__link--active" href="#">Каталог</a>
+                <a class="nav__link" href="#">Услуги</a>
+                <a class="nav__link" href="#">О компании</a>
+                <a class="nav__link" href="#">Оплата и доставка</a>
+                <a class="nav__link" href="#">Контакты</a>
+            </nav>
+            <div class="menu">
+                <a class="menu__item menu__item--callback" href="#">Обратный звонок</a>
+
+                <a class="menu__item menu__item--search" href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="6.44939" cy="6.44939" r="5.7629" stroke="#1D1700" stroke-width="1.37297"/>
+                    <circle cx="6.44939" cy="6.44939" r="5.7629" stroke="black" stroke-opacity="0.2" stroke-width="1.37297"/>
+                    <rect x="10.5184" y="11.0454" width="0.746711" height="6.31981" rx="0.373356" transform="rotate(-45 10.5184 11.0454)" fill="#1D1700"/>
+                    <rect x="10.5184" y="11.0454" width="0.746711" height="6.31981" rx="0.373356" transform="rotate(-45 10.5184 11.0454)" fill="black" fill-opacity="0.2"/>
+                    <rect x="10.5184" y="11.0454" width="0.746711" height="6.31981" rx="0.373356" transform="rotate(-45 10.5184 11.0454)" stroke="#1D1700" stroke-width="0.686486"/>
+                    <rect x="10.5184" y="11.0454" width="0.746711" height="6.31981" rx="0.373356" transform="rotate(-45 10.5184 11.0454)" stroke="black" stroke-opacity="0.2" stroke-width="0.686486"/>
+                    </svg>
+                </a>
+
+                <a class="menu__item menu__item--user" href="#">
+                    <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.610046 15.443C0.30238 15.6584 0.227556 16.0824 0.442922 16.39C0.658288 16.6977 1.08229 16.7725 1.38995 16.5571L0.610046 15.443ZM16.9366 16.5571C17.2442 16.7725 17.6682 16.6977 17.8836 16.39C18.099 16.0824 18.0242 15.6584 17.7165 15.443L16.9366 16.5571ZM1 16.0001C1.38995 16.5571 1.38977 16.5573 1.38961 16.5574C1.38957 16.5574 1.38941 16.5575 1.38934 16.5576C1.38918 16.5577 1.38907 16.5578 1.38901 16.5578C1.38889 16.5579 1.38897 16.5578 1.38924 16.5576C1.38979 16.5573 1.39112 16.5564 1.39322 16.5549C1.39742 16.552 1.40472 16.5471 1.41506 16.5402C1.43576 16.5264 1.46862 16.5048 1.51327 16.4766C1.60257 16.4201 1.73887 16.3371 1.91899 16.2362C2.27941 16.0344 2.814 15.762 3.49744 15.4886C4.86552 14.9413 6.81986 14.3944 9.16327 14.3944V13.0344C6.60871 13.0344 4.48141 13.6302 2.99235 14.2258C2.24722 14.5239 1.65936 14.8229 1.25448 15.0496C1.05194 15.163 0.894875 15.2586 0.786478 15.3271C0.73227 15.3614 0.690201 15.3889 0.660671 15.4086C0.645904 15.4185 0.63427 15.4263 0.625817 15.4321C0.62159 15.435 0.618158 15.4374 0.615528 15.4392C0.614213 15.4401 0.613098 15.4409 0.612184 15.4415C0.611727 15.4418 0.61132 15.4421 0.610964 15.4424C0.610785 15.4425 0.610556 15.4426 0.610467 15.4427C0.61025 15.4428 0.610046 15.443 1 16.0001ZM9.16327 14.3944C11.5067 14.3944 13.461 14.9413 14.8291 15.4886C15.5125 15.762 16.0471 16.0344 16.4075 16.2362C16.5877 16.3371 16.724 16.4201 16.8133 16.4766C16.8579 16.5048 16.8908 16.5264 16.9115 16.5402C16.9218 16.5471 16.9291 16.552 16.9333 16.5549C16.9354 16.5564 16.9367 16.5573 16.9373 16.5576C16.9376 16.5578 16.9376 16.5579 16.9375 16.5578C16.9375 16.5578 16.9374 16.5577 16.9372 16.5576C16.9371 16.5575 16.937 16.5574 16.9369 16.5574C16.9368 16.5573 16.9366 16.5571 17.3265 16.0001C17.7165 15.443 17.7163 15.4428 17.7161 15.4427C17.716 15.4426 17.7157 15.4425 17.7156 15.4424C17.7152 15.4421 17.7148 15.4418 17.7143 15.4415C17.7134 15.4409 17.7123 15.4401 17.711 15.4392C17.7084 15.4374 17.7049 15.435 17.7007 15.4321C17.6923 15.4263 17.6806 15.4185 17.6659 15.4086C17.6363 15.3889 17.5943 15.3614 17.5401 15.3271C17.4317 15.2586 17.2746 15.163 17.072 15.0496C16.6672 14.8229 16.0793 14.5239 15.3342 14.2258C13.8451 13.6302 11.7178 13.0344 9.16327 13.0344V14.3944Z" fill="#1D1700"/>
+                        <path d="M0.610046 15.443C0.30238 15.6584 0.227556 16.0824 0.442922 16.39C0.658288 16.6977 1.08229 16.7725 1.38995 16.5571L0.610046 15.443ZM16.9366 16.5571C17.2442 16.7725 17.6682 16.6977 17.8836 16.39C18.099 16.0824 18.0242 15.6584 17.7165 15.443L16.9366 16.5571ZM1 16.0001C1.38995 16.5571 1.38977 16.5573 1.38961 16.5574C1.38957 16.5574 1.38941 16.5575 1.38934 16.5576C1.38918 16.5577 1.38907 16.5578 1.38901 16.5578C1.38889 16.5579 1.38897 16.5578 1.38924 16.5576C1.38979 16.5573 1.39112 16.5564 1.39322 16.5549C1.39742 16.552 1.40472 16.5471 1.41506 16.5402C1.43576 16.5264 1.46862 16.5048 1.51327 16.4766C1.60257 16.4201 1.73887 16.3371 1.91899 16.2362C2.27941 16.0344 2.814 15.762 3.49744 15.4886C4.86552 14.9413 6.81986 14.3944 9.16327 14.3944V13.0344C6.60871 13.0344 4.48141 13.6302 2.99235 14.2258C2.24722 14.5239 1.65936 14.8229 1.25448 15.0496C1.05194 15.163 0.894875 15.2586 0.786478 15.3271C0.73227 15.3614 0.690201 15.3889 0.660671 15.4086C0.645904 15.4185 0.63427 15.4263 0.625817 15.4321C0.62159 15.435 0.618158 15.4374 0.615528 15.4392C0.614213 15.4401 0.613098 15.4409 0.612184 15.4415C0.611727 15.4418 0.61132 15.4421 0.610964 15.4424C0.610785 15.4425 0.610556 15.4426 0.610467 15.4427C0.61025 15.4428 0.610046 15.443 1 16.0001ZM9.16327 14.3944C11.5067 14.3944 13.461 14.9413 14.8291 15.4886C15.5125 15.762 16.0471 16.0344 16.4075 16.2362C16.5877 16.3371 16.724 16.4201 16.8133 16.4766C16.8579 16.5048 16.8908 16.5264 16.9115 16.5402C16.9218 16.5471 16.9291 16.552 16.9333 16.5549C16.9354 16.5564 16.9367 16.5573 16.9373 16.5576C16.9376 16.5578 16.9376 16.5579 16.9375 16.5578C16.9375 16.5578 16.9374 16.5577 16.9372 16.5576C16.9371 16.5575 16.937 16.5574 16.9369 16.5574C16.9368 16.5573 16.9366 16.5571 17.3265 16.0001C17.7165 15.443 17.7163 15.4428 17.7161 15.4427C17.716 15.4426 17.7157 15.4425 17.7156 15.4424C17.7152 15.4421 17.7148 15.4418 17.7143 15.4415C17.7134 15.4409 17.7123 15.4401 17.711 15.4392C17.7084 15.4374 17.7049 15.435 17.7007 15.4321C17.6923 15.4263 17.6806 15.4185 17.6659 15.4086C17.6363 15.3889 17.5943 15.3614 17.5401 15.3271C17.4317 15.2586 17.2746 15.163 17.072 15.0496C16.6672 14.8229 16.0793 14.5239 15.3342 14.2258C13.8451 13.6302 11.7178 13.0344 9.16327 13.0344V14.3944Z" fill="black" fill-opacity="0.2"/>
+                        <circle cx="9.16411" cy="5.87755" r="5.19755" stroke="#1D1700" stroke-width="1.36"/>
+                        <circle cx="9.16411" cy="5.87755" r="5.19755" stroke="black" stroke-opacity="0.2" stroke-width="1.36"/>
+                        </svg>
+                        
+                    </a>
+                <a class="menu__item menu__item--raiting" href="#">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                        <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                        <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                        <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                        <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                        <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                        <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                        <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                        </svg>
+                    </a>
+
+                <a class="menu__item menu__item--favorites" href="#">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>     
+                    </a>
+                <a class="menu__item menu__item--cart" href="#"><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_1_685)">
+                    <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                    <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                    <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                    <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                    <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                    <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                    <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                    <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                    <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                    <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="3"/>
+                    <feGaussianBlur stdDeviation="3"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <aside class="filter">
+            <h3 class="filter__title">Выбор по параметрам:</h3>
+            <form action="POST">
+                <div class="filter__item filter__item--price">
+                    <p class="filter-item__title">Цена:</p>
+                    <input type="range" min="0" max="100">
+                    <div class="filter-inputs">
+                        <input type="number">
+                        <span></span>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="filter__item filter__item--area">
+                    <p class="filter-item__title">Площадь помещения:</p>
+                    <input type="range" min="0" max="100">
+                    <div class="filter-inputs">
+                        <input type="number">
+                        <span></span>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="filter__item filter__item--performance">
+                    <p class="filter-item__title">Производитель:</p>
+                    <input class="input-search" placeholder="Поиск" type="text">
+                    <div class="scrollbar" scrolling>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="alc"><input id="alc" type="checkbox" />ALC<span>(2)</span></label>
+                        <label for="aeronic"><input id="aeronic" type="checkbox" />Aeronic<span>(14)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label> 
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(4)</span></label>
+                        <label for="abask"><input id="abask" type="checkbox" />ABASK<span>(3)</span></label>
+                        
+                       
+                    </div>
+                </div>
+                <div class="filter__item filter__item--option">
+                    <p class="filter-item__title">Дополнительные опции:</p>
+                    <label for="ion"><input id="ion" type="checkbox" />Ионизация<span>(46)</span></label>
+                    <label for="climat"><input id="climat" type="checkbox" />Климат контроль<span>(22)</span></label>
+                    <label for="turbo"><input id="turbo" type="checkbox" />Турбо<span>(144)</span></label>
+                    <label for="eco"><input id="eco" type="checkbox" />Эко<span>(4)</span></label>
+                    <label for="wifi"><input id="wifi" type="checkbox" />Wi Fi модуль<span>(70)</span></label>
+                </div>
+                <div class="filter__item filter__item--power">
+                    <p class="filter-item__title">Мощность охлаждения:</p>
+                    <input type="range" min="0" max="100">
+                    <div class="filter-inputs">
+                        <input type="number">
+                        <span></span>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="filter__item filter__item--noise">
+                    <p class="filter-item__title">Уровень шума:</p>
+                    <input type="range" min="0" max="100">
+                    <div class="filter-inputs">
+                        <input type="number">
+                        <span></span>
+                        <input type="number">
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <div class="page-content">
+            <section class="sorting wrapper">
+                <div class="sorting__elem">
+                    <img src="image/Condition.png" alt="">
+                    <a href="">Кондиционеры</a>
+                </div>
+                <div class="sorting__elem">
+                    <img src="image/vent-system.png" alt="">
+                    <a href="">Системы вентиляции</a>
+                </div>
+                <ul class="sorting-list">
+                    <li class="sorting-list__item">Кондиционеры</li>
+                    <li class="sorting-list__item">Сплит-системы</li>
+                    <li class="sorting-list__item">Сплит-системы</li>
+                    <li class="sorting-list__item">Вентиляция</li>
+                    <li class="sorting-list__item">Инверторные</li>
+                    <li class="sorting-list__item">Дизайнерские</li>
+                    <li class="sorting-list__item">С Wi Fi</li>
+                    <li class="sorting-list__item">Сплит-системы</li>
+                    <li class="sorting-list__item">Инверторные</li>
+                    <li class="sorting-list__item">С Wi Fi</li>
+                    <li class="sorting-list__item">На 2 комнаты</li>
+                    <li class="sorting-list__item">На 3 комнаты</li>
+                    <li class="sorting-list__item">На 4 комнаты</li>
+                    <li class="sorting-list__item">На 5 комнат</li>
+                    <li class="sorting-list__item">Для кухни ресторана</li>
+                    <li class="sorting-list__item">Для производства</li>
+                    <li class="sorting-list__item">Дизайнерские</li>
+                    <li class="sorting-list__item">Сплит-системы</li>
+                </ul>
+                <div class="selcet-wrapper">
+                    <p class="select-label">Сортировка: </p>
+                    <select class="select" name="" id="">
+                        <option value="1">По возрастанию цены</option>
+                        <option value="2">По возрастанию цены</option>
+                        <option value="3">По возрастанию цены</option>
+                    </select>
+                </div>
+            </section>
+            <section class="products wrapper">
+                <div class="products__item">
+                    <img src="image/cart1.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price product-price--sale">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <img src="image/cart2.png" alt="">
+                    <h4 class="products__title">Настольный мини-кондиционер Antarctic Air</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="products__item">
+                    <img src="image/cart3.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart3.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price product-price--sale">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart2.png" alt="">
+                    <h4 class="products__title">Настольный мини-кондиционер Antarctic Air</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart1.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart1.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price product-price--sale">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart2.png" alt="">
+                    <h4 class="products__title">Настольный мини-кондиционер Antarctic Air</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart3.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart3.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart2.png" alt="">
+                    <h4 class="products__title">Настольный мини-кондиционер Antarctic Air</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price product-price--sale">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div><div class="products__item">
+                    <img src="image/cart1.png" alt="">
+                    <h4 class="products__title">Кондиционер Ballu RC-TVS121-42</h4>
+                    <div class="products__description">
+                        <p class="products__text">Инвертор:</p>
+                        <p class="products__text">Да</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность охлаждения:</p>
+                        <p class="products__text">2200 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Мощность обогрева:</p>
+                        <p class="products__text">2640 Вт</p>
+                    </div>
+                    <div class="products__description">
+                        <p class="products__text">Площадь помещения:</p>
+                        <p class="products__text">до 26 м2</p>
+                    </div>
+                    <div class="products__description products__description--price">
+                        <span class="product-price">18240 ₽</span>
+                        <span class="products-availability">Есть в наличии</span>
+                    </div>
+                    <div class="buttons-row">
+                        <button class="btn-tocart">В Корзину <span><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_1_685)">
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="20.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="#1D1700"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" fill="black" fill-opacity="0.2"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="#1D1700" stroke-width="0.571429"/>
+                            <circle cx="12.9997" cy="18.5716" r="1.14286" stroke="black" stroke-opacity="0.2" stroke-width="0.571429"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="#1D1700"/>
+                            <path d="M7 3.42857C6.68441 3.42857 6.42857 3.68441 6.42857 4C6.42857 4.31559 6.68441 4.57143 7 4.57143V3.42857ZM10.4876 4.86831L11.0423 4.73104V4.73104L10.4876 4.86831ZM12.6033 13.4174L12.0486 13.5547V13.5547L12.6033 13.4174ZM21.4045 13.431L21.9575 13.575L21.4045 13.431ZM22.6272 8.73708L22.0743 8.59303L22.6272 8.73708ZM14.6364 6.73469C14.3208 6.73469 14.0649 6.99053 14.0649 7.30612C14.0649 7.62171 14.3208 7.87755 14.6364 7.87755V6.73469ZM7 4.57143H9.37822V3.42857H7V4.57143ZM9.93292 5.00558L12.0486 13.5547L13.158 13.2801L11.0423 4.73104L9.93292 5.00558ZM13.7127 14.8571H20.2985V13.7143H13.7127V14.8571ZM21.9575 13.575L23.1802 8.88113L22.0743 8.59303L20.8515 13.2869L21.9575 13.575ZM21.5213 6.73469H14.6364V7.87755H21.5213V6.73469ZM23.1802 8.88113C23.4631 7.79512 22.6435 6.73469 21.5213 6.73469V7.87755C21.8954 7.87755 22.1686 8.23103 22.0743 8.59303L23.1802 8.88113ZM20.2985 14.8571C21.0789 14.8571 21.7607 14.3301 21.9575 13.575L20.8515 13.2869C20.7859 13.5386 20.5586 13.7143 20.2985 13.7143V14.8571ZM12.0486 13.5547C12.2379 14.3197 12.9245 14.8571 13.7127 14.8571V13.7143C13.45 13.7143 13.2211 13.5352 13.158 13.2801L12.0486 13.5547ZM9.37822 4.57143C9.64094 4.57143 9.86981 4.75056 9.93292 5.00558L11.0423 4.73104C10.853 3.96597 10.1664 3.42857 9.37822 3.42857V4.57143Z" fill="black" fill-opacity="0.2"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1_685" x="0.428589" y="0.428711" width="28.8079" height="28.5713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="3"/>
+                            <feGaussianBlur stdDeviation="3"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.113725 0 0 0 0 0.0901961 0 0 0 0 0 0 0 0 0.1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_685"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_685" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg></span> </button>
+                            <div class="buttons-wrapper">
+                                <a class="menu__item" href=""><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="#1D1700"/>
+                                    <rect y="9.45459" width="1.45455" height="6.54545" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="15.2727" y="5.81836" width="1.45455" height="10.1818" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="10.1818" y="2.18164" width="1.45455" height="13.8182" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="#1D1700"/>
+                                    <rect x="5.09088" width="1.45455" height="16" rx="0.727273" fill="black" fill-opacity="0.2"/>
+                                    </svg></a>
+                                <a class="menu__item" href=""><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="#1D1700" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.53333 0.78418C3.03002 0.78418 1 2.73336 1 5.13817C1 7.07944 1.79333 11.6868 9.60244 16.3442C9.74232 16.4268 9.90291 16.4705 10.0667 16.4705C10.2304 16.4705 10.391 16.4268 10.5309 16.3442C18.34 11.6868 19.1333 7.07944 19.1333 5.13817C19.1333 2.73336 17.1033 0.78418 14.6 0.78418C12.0967 0.78418 10.0667 3.42296 10.0667 3.42296C10.0667 3.42296 8.03663 0.78418 5.53333 0.78418Z" stroke="black" stroke-opacity="0.2" stroke-width="1.36" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper">
+                <div class="search">
+                <input placeholder="Начните вводить текст" class="search__input" type="text">
+                <button class="search__btn">Найти</button>
+            </div>
+            </section>
+            <section class="wrapper">
+                <div class="benefits">
+                    <h3 class="benefits__title">Наши преимущества</h3>
+                    <div class="benefits__wrapper benefits-wrapper">
+                        <div class="benefits-wrapper__info">
+                            <div class="benefit">
+                                <img class="benefit__img" src="image/icons/benefit1.png" alt="">
+                                <p class="benefit__text">Комплексные решения</p>
+                            </div>
+                            <div class="benefit">
+                                <img class="benefit__img" src="image/icons/benefit2.png" alt="">
+                                <p class="benefit__text">Быстрая доставка и монтаж</p>
+                            </div>
+                            <div class="benefit">
+                                <img class="benefit__img" src="image/icons/benefit3.png" alt="">
+                                <p class="benefit__text">Сервисное обслуживание</p>
+                            </div>
+
+                        </div>
+
+                        <div class="benefit-picture">
+                                <img class="benefit-picture__img" src="image/icons/benefit-img.png" alt="">
+                                <p class="benefit-picture__text">Лучшие серцифицированные специалисты </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slider wrapper">
+                <h3 class="slider__title">Выполненные работы</h3>
+                <div class="slider__wrapper slider-wrapper">
+                    <img class="slider-wrapper__img" src="image/slider.png" alt="">
+                    <div class="slider-dots">
+                        <button class="slider-arrow arrow-left"></button>
+                        <div class="slider-dots__dot slider-dots__dot--active"></div>
+                        <div class="slider-dots__dot"></div>
+                        <div class="slider-dots__dot"></div>
+                        <button class="slider-arrow arrow-right"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews wrapper">
+                <div class="reviews-slider">
+                    <h3 class="reviews-title">Отзывы</h3>
+                    <img class="reviews-img" src="image/phone.png" alt="">
+                    <div class="btn-wrapper">
+                        <button class="reviews-arrow reviews-arrow__left"><svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.434315 5.43431C0.121895 5.74673 0.121895 6.25327 0.434315 6.56569L5.52548 11.6569C5.8379 11.9693 6.34443 11.9693 6.65685 11.6569C6.96927 11.3444 6.96927 10.8379 6.65685 10.5255L2.13137 6L6.65685 1.47452C6.96927 1.1621 6.96927 0.655566 6.65685 0.343146C6.34444 0.0307268 5.8379 0.0307268 5.52548 0.343146L0.434315 5.43431ZM2 5.2L1 5.2L1 6.8L2 6.8L2 5.2Z" fill="#1D1700"/>
+                            <path d="M0.434315 5.43431C0.121895 5.74673 0.121895 6.25327 0.434315 6.56569L5.52548 11.6569C5.8379 11.9693 6.34443 11.9693 6.65685 11.6569C6.96927 11.3444 6.96927 10.8379 6.65685 10.5255L2.13137 6L6.65685 1.47452C6.96927 1.1621 6.96927 0.655566 6.65685 0.343146C6.34444 0.0307268 5.8379 0.0307268 5.52548 0.343146L0.434315 5.43431ZM2 5.2L1 5.2L1 6.8L2 6.8L2 5.2Z" fill="black" fill-opacity="0.2"/>
+                            </svg>
+                            </button>
+                        <button class="reviews-arrow reviews-arrow__right">
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.56569 6.56569C6.8781 6.25327 6.8781 5.74673 6.56569 5.43431L1.47452 0.343146C1.1621 0.0307264 0.655565 0.0307264 0.343146 0.343146C0.0307264 0.655565 0.0307264 1.1621 0.343146 1.47452L4.86863 6L0.343146 10.5255C0.0307264 10.8379 0.0307264 11.3444 0.343146 11.6569C0.655565 11.9693 1.1621 11.9693 1.47452 11.6569L6.56569 6.56569ZM5 6.8H6V5.2H5V6.8Z" fill="#1D1700"/>
+                                <path d="M6.56569 6.56569C6.8781 6.25327 6.8781 5.74673 6.56569 5.43431L1.47452 0.343146C1.1621 0.0307264 0.655565 0.0307264 0.343146 0.343146C0.0307264 0.655565 0.0307264 1.1621 0.343146 1.47452L4.86863 6L0.343146 10.5255C0.0307264 10.8379 0.0307264 11.3444 0.343146 11.6569C0.655565 11.9693 1.1621 11.9693 1.47452 11.6569L6.56569 6.56569ZM5 6.8H6V5.2H5V6.8Z" fill="black" fill-opacity="0.2"/>
+                                </svg>
+                                
+                        </button>
+                    </div>
+                </div>
+                <div class="sertificate-wrapper">
+                    <h3 class="sertificate-title">Сертификаты</h3>
+                    <div class="sertificate-grid">
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                        <div class="sertificate-grid__item"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="scheme wrapper">
+                <h3 class="scheme__title">Схема работы</h3>
+                <div class="scheme-blocks">
+                    <div class="scheme-blocks__item scheme-item">
+                        <p class="scheme-item__number">1</p>
+                        <p class="scheme-item__text">Описание первого этапа</p>
+                    </div>
+                    <div class="scheme-blocks__item scheme-item">
+                        <p class="scheme-item__number">2</p>
+                        <p class="scheme-item__text">Описание второго этапа</p>
+                    </div>
+                    <div class="scheme-blocks__item scheme-item">
+                        <p class="scheme-item__number">3</p>
+                        <p class="scheme-item__text">Третий этап</p>
+                    </div>
+                    <div class="scheme-blocks__item scheme-item">
+                        <p class="scheme-item__number">4</p>
+                        <p class="scheme-item__text">Описание четвертого этапа</p>
+                    </div>
+                    <div class="scheme-blocks__item scheme-item">
+                        <p class="scheme-item__number">5</p>
+                        <p class="scheme-item__text">Пятый этап</p>
+                    </div>
+                </div>
+            </section>
+            <section class="news wrapper">
+                <h3 class="news__title">Новости и статьи</h3>
+                <div class="news-blocks">
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Как настроить работу кондиционера</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований. Учитывая ключевые сценарии поведения</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Вентиляция для частного дома</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований.</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Вентиляция для промышленных помещений</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований. Учитывая ключевые сценарии поведения</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Новинки в мире кондиционеров</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований. Учитывая ключевые сценарии поведения</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Новость № 4</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований. Учитывая ключевые сценарии поведения</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                    <div class="news-blocks__item news-item">
+                        <img class="news-item__img" src="image/news.png" alt="">
+                        <h5 class="news-item__title">Новость № 5</h5>
+                        <p class="news-item__text">Прежде всего, постоянный количественный рост и сфера нашей активности создаёт предпосылки для позиций, занимаемых участниками в отношении поставленных задач. Учитывая ключевые сценарии поведения, семантический разбор внешних противодействий требует от нас анализа первоочередных требований. Учитывая ключевые сценарии поведения</p>
+                        <a class="news-item__readmore" href="#">Читать подробнее</a>
+                    </div>
+                </div>
+            </section>
+            <section class="application wrapper">
+                <div class="application-blocks">
+                    <img class="application-blocks__img" src="image/human.png" alt="">
+                    <form action="POST" class="application-blocks__form form">
+                        <p class="form__title">Заполните заявку сейчас и получите скидку</p>
+                        <p class="form__subtitle"><span>—20% </span> на монтажные работы </p>
+                        <input class="form__inputs form__inputs--name" type="text" placeholder="Ваше имя">
+                        <input class="form__inputs form__inputs--phone" type="number" placeholder="Номер телефона">
+                        <button class="form__submit btn-submit" type="submit">Получить скидку</button>
+                    </form>
+                </div>
+            </section>
+            <section class="contacts wrapper">
+                <h3 class="contacts__title">Контакты</h3>
+                <div class="contacts-blocks">
+                    <div class="contacts-blocks__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.684348948795!2d30.415254316216405!3d59.88758957317766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962fcf4ebd6695%3A0x3c2180e96e878e91!2z0YPQuy4g0JrRgNGD0L_RgdC60L7QuSwgNTUsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTIxNDg!5e0!3m2!1sru!2sru!4v1642527221696!5m2!1sru!2sru" width="718" height="553" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="contacts-blocks__con con">
+                        <a class="con__tel" href="tel:+78127726242">+7 (812) 772-62-42</a>
+                        <a class="con__mail" href="mailto:info@mistral.ru">info@mistral.ru</a>
+                        <p class="con__text">Санкт-Петербург,<br> ул. Крупской, 55</p>
+                        <div class="social">
+                            <a href="" class="social__item"><img src="image/icons/Vk.png" alt="vkontakte"></a>
+                            <a href="" class="social__item"><img src="image/icons/fb.png" alt="facebook"></a>
+                            <a href="" class="social__item"><img src="image/icons/inst.png" alt="instagram"></a>
+                            <a href="" class="social__item"><img src="image/icons/youtube.png" alt="youtube"></a>
+                        </div>
+                        <a class="con__btn" href="">Написать директору</a>
+                    </div>
+                </div>
+            </section>
+            <section class="wrapper">
+                <div class="footer">
+                    <p class="footer__text">© «Мистраль», 2022</p>
+                    <div class="footer-blocks">
+                        <a class="footer-blocks__link" href="#">Реквизиты компании</a>
+                        <a class="footer-blocks__link" href="#">Политика конфиденциальности</a>
+                        <a class="footer-blocks__link" href="#">Политика cookies</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     
 </body>
 </html>

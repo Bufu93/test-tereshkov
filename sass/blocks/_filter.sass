@@ -1,0 +1,78 @@
+.filter
+    max-width: 303px
+    &__title
+        font-weight: 500
+        font-size: 18px
+    &__item
+.filter-item
+    &__title
+        padding-top: 18px
+        font-weight: 500
+        font-size: 18px
+        border-top: solid 2px #D7D5D5
+
+.filter-inputs
+    display: flex
+    flex-direction: row
+    & input
+        width: 124px
+        height: 35px
+        border-radius: 4px
+        outline: none
+        border: solid 1px $black
+        text-align: center
+        opacity: 0.8
+    & span
+        width: 20px
+        height: 1px
+        opacity: 0.8
+        background-color: $black
+        margin: auto 18px
+.scrollbar
+    display: flex
+    flex-direction: column
+    overflow-y: scroll
+    max-height: 240px
+
+.scrollbar::-webkit-scrollbar
+    width: 6px
+.scrollbar::-webkit-scrollbar-track
+    background: #E3E4E5
+    
+.scrollbar::-webkit-scrollbar-thumb
+    background: #D7D5D5    
+    border: 1px solid #D7D5D5
+    box-sizing: border-box
+    border-radius: 4px
+
+.input-search
+    width: 100%
+    margin-bottom: 20px
+    border-radius: 4px
+    opacity: 0.8
+    background: url(../image/icons/iconSearh.svg) no-repeat 95%
+    font-weight: 350
+    font-size: 14px
+    padding: 5px 12px
+    outline: none
+    
+
+input[type=checkbox]
+    width: 22px
+    height: 22px
+    border-radius: 4px
+    margin-right: 10px
+    opacity: 0.8
+label
+    font-weight: 350
+    font-size: 14px
+    opacity: 0.8
+    display: flex
+    align-items: center
+    margin-bottom: 12px
+
+.filter__item--option
+    display: flex
+    flex-direction: column
+
+    

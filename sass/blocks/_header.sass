@@ -1,0 +1,51 @@
+.navbar
+    padding-top: 41px
+    padding-bottom: 46px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.nav
+    &__link
+        text-transform: uppercase
+        color: $black
+        margin-right: 39px
+        font-weight: 500
+        font-size: 20px
+    &__link--active
+        color: $blue
+    &__link::before
+        padding-right: 8px
+        content: ""
+        width: 14px
+        height: 13px
+        background-image: url(../image/icons/Vector.svg)
+        background-repeat: no-repeat
+        display: inline-block
+    &__link:hover
+        color: $blue
+        
+
+.menu
+    display: flex
+    align-items: center
+    &__item
+        width: 40px
+        height: 40px
+        background-color: $BG
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        box-shadow: $shadow
+        margin-right: 20px
+    &__item--callback
+        width: 183px
+        padding: 12px 28px
+        border-radius: 39px
+        font-weight: 500
+        font-size: 14px
+        color: $black
+    &__item:hover
+        transform: scale(1.2)
+        transition: 0.3s

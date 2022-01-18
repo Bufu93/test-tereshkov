@@ -1,0 +1,16 @@
+.reviews {
+  display: flex;
+  flex-direction: row;
+}
+
+.reviews-slider-title {
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.sertificate__title {
+  font-weight: 500;
+  font-size: 28px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=reviews.css.map */

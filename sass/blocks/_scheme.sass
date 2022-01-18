@@ -1,0 +1,52 @@
+.scheme
+    margin-bottom: 100px
+    &__title
+        font-weight: 500
+        font-size: 28px
+        text-transform: uppercase
+    &__title::before
+        content: ''
+        width: 43px
+        height: 1px
+        background-color: $blue
+        display: inline-block
+        align-items: center
+        margin-bottom: 9px
+        margin-right: 20px
+
+.scheme-blocks
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    height: 416px
+    &__item
+        background-color: $BG
+        border-radius: 50%
+        width: 208px
+        height: 208px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        
+    .scheme-item
+        &__text
+            max-width: 154px
+            text-align: center
+            font-weight: 350
+            font-size: 18px
+        &__number
+            font-weight: 500
+            font-size: 28px
+            margin: 0
+
+    &__item:nth-child(2),
+    &__item:nth-child(4)
+        align-self: flex-end
+    &__item:nth-child(1)
+    &__item:nth-child(3)
+        align-self: flex-start
+        
+
+            

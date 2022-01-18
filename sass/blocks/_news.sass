@@ -1,0 +1,37 @@
+.news
+    &__title
+        font-weight: 500
+        font-size: 28px
+        text-transform: uppercase
+    &__title::before
+        content: ''
+        width: 43px
+        height: 1px
+        background-color: $blue
+        display: inline-block
+        align-items: center
+        margin-bottom: 9px
+        margin-right: 20px   
+
+.news-blocks
+    margin-bottom: 146px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 42px
+    &__item
+        text-align: left
+
+.news-item
+        &__title
+            font-weight: 500
+            font-size: 18px
+        &__text
+            font-weight: 350
+            font-size: 14px
+        &__readmore
+            padding: 9px 28px
+            border-radius: 20px
+            background-color: $BG
+            font-weight: 350
+            font-size: 18px
+            color: $black
